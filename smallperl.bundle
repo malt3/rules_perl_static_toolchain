@@ -1,0 +1,94 @@
+static
+strip ppi
+
+incglob '/opt/openssl-1.1.1s/util/perl/**.pm'
+incglob OpenSSL/*
+
+use utf8
+use Config
+use Errno
+use Fcntl
+use POSIX
+use Socket
+use Encode
+use Digest::MD5
+#use Encode::Byte
+use Encode::Unicode
+use Scalar::Util
+use Benchmark
+
+use Data::Dump
+
+use EV
+use EV::Loop::Async
+use Crypt::Twofish2
+use Array::Heap
+use Convert::Scalar
+use Compress::LZF
+use JSON::XS
+use Linux::Inotify2
+use common::sense
+use Guard
+use Async::Interrupt
+use AnyEvent
+use AnyEvent::AIO
+use AnyEvent::DNS
+use AnyEvent::Debug
+use AnyEvent::HTTP
+use AnyEvent::Handle
+use AnyEvent::Impl::EV
+use AnyEvent::Impl::Perl
+use AnyEvent::Socket
+use AnyEvent::Util
+use IO::AIO
+use List::Util
+use Coro
+use Coro::AIO
+use Coro::AnyEvent
+use Coro::Channel
+use Coro::Debug
+use Coro::EV
+use Coro::Handle
+use Coro::RWLock
+use Coro::Select
+use Coro::Semaphore
+use Coro::SemaphoreSet
+use Coro::Signal
+use Coro::Socket
+use Coro::Specific
+use Coro::State
+use Coro::Storable
+use Coro::Timer
+use Coro::Util
+
+use AnyEvent::HTTPD
+use URI::_generic
+use URI::http
+
+use Text::Template
+use Test::More
+use File/Glob.pm
+use OpenSSL
+use OpenSSL::Glob
+# use lib '/opt/openssl-1.1.1s/util/perl'
+
+add /opt/openssl-1.1.1s/util/perl/OpenSSL/Test/Utils.pm OpenSSL/Test/Utils.pm
+add /opt/openssl-1.1.1s/util/perl/OpenSSL/Test/Simple.pm OpenSSL/Test/Simple.pm
+add /opt/openssl-1.1.1s/util/perl/OpenSSL/copyright.pm OpenSSL/copyright.pm
+add /opt/openssl-1.1.1s/util/perl/OpenSSL/Glob.pm OpenSSL/Glob.pm
+add /opt/openssl-1.1.1s/util/perl/OpenSSL/Test.pm OpenSSL/Test.pm
+add /opt/openssl-1.1.1s/util/perl/OpenSSL/Util/Pod.pm OpenSSL/Util/Pod.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/Record.pm TLSProxy/Record.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/Proxy.pm TLSProxy/Proxy.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/Certificate.pm TLSProxy/Certificate.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/Alert.pm TLSProxy/Alert.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/NewSessionTicket.pm TLSProxy/NewSessionTicket.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/ClientHello.pm TLSProxy/ClientHello.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/ServerHello.pm TLSProxy/ServerHello.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/ServerKeyExchange.pm TLSProxy/ServerKeyExchange.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/CertificateVerify.pm TLSProxy/CertificateVerify.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/EncryptedExtensions.pm TLSProxy/EncryptedExtensions.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/Message.pm TLSProxy/Message.pm
+add /opt/openssl-1.1.1s/util/perl/TLSProxy/CertificateRequest.pm TLSProxy/CertificateRequest.pm
+add /opt/openssl-1.1.1s/util/perl/checkhandshake.pm checkhandshake.pm
+add /opt/openssl-1.1.1s/util/perl/with_fallback.pm with_fallback.pm
