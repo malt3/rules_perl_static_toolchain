@@ -1,0 +1,63 @@
+static
+strip ppi
+
+use utf8
+use Config
+use Errno
+use Fcntl
+use POSIX
+use Socket
+use Encode
+use Digest::MD5
+#use Encode::Byte
+use Encode::Unicode
+use Scalar::Util
+use Benchmark
+
+use Data::Dump
+
+use EV
+use EV::Loop::Async
+use Crypt::Twofish2
+use Array::Heap
+use Convert::Scalar
+use Compress::LZF
+use JSON::XS
+use Linux::Inotify2
+use common::sense
+use Guard
+use Async::Interrupt
+use AnyEvent
+use AnyEvent::AIO
+use AnyEvent::DNS
+use AnyEvent::Debug
+use AnyEvent::HTTP
+use AnyEvent::Handle
+use AnyEvent::Impl::EV
+use AnyEvent::Impl::Perl
+use AnyEvent::Socket
+use AnyEvent::Util
+use IO::AIO
+use List::Util
+use Coro
+use Coro::AIO
+use Coro::AnyEvent
+use Coro::Channel
+use Coro::Debug
+use Coro::EV
+use Coro::Handle
+use Coro::RWLock
+use Coro::Select
+use Coro::Semaphore
+use Coro::SemaphoreSet
+use Coro::Signal
+use Coro::Socket
+use Coro::Specific
+use Coro::State
+use Coro::Storable
+use Coro::Timer
+use Coro::Util
+
+use AnyEvent::HTTPD
+use URI::_generic
+use URI::http
